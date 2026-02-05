@@ -1,1 +1,167 @@
 "# Machine-Learning-Projects-Bigner-To-Advanced-Journey-Start-" 
+# third rpoject in this we are using a dataset or navy sonar rocks vs mine prediction
+in this we use some libraries that is very usefull for this prediction model and aslo we have an dataset of sonar rays 
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.metrics import confusion_matrix,recall_score,accuracy_score
+from sklearn.model_selection import train_test_split
+from sklearn.svm import SVC
+ i know that this projct is already made it   but my focusing part to improve accurasy and recall by this model go on high level 
+ 
+Another project 
+# 📚 Student Habits vs Academic Performance Prediction System
+
+A Machine Learning project that predicts **student exam performance** based on daily lifestyle habits such as study hours, sleep patterns, social media usage, attendance, mental health rating, diet quality, and more.
+
+This project uses **Linear Regression** to analyze and model the relationship between student habits and their academic outcomes.
+
+---
+
+## 🚀 Project Objective
+
+The main goal of this project is to:
+- Understand how student lifestyle habits impact exam scores.
+- Build a regression model that can predict the **Exam Score** of a student.
+- Improve model performance through data preprocessing and outlier removal.
+
+---
+
+## 📌 Dataset Features
+
+The dataset contains the following columns:
+
+- `student_id`
+- `age`
+- `gender`
+- `study_hours_per_day`
+- `social_media_hours`
+- `netflix_hours`
+- `part_time_job`
+- `attendance_percentage`
+- `sleep_hours`
+- `diet_quality`
+- `exercise_frequency`
+- `parental_education_level`
+- `internet_quality`
+- `mental_health_rating`
+- `extracurricular_participation`
+- `exam_score` *(Target Variable)*
+
+---
+
+## 🛠️ Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib / Seaborn (optional for visualization)
+- Scikit-learn
+
+---
+
+## 🔍 Data Preprocessing Steps
+
+✔ Dropped irrelevant column (`student_id`)  
+✔ Handled categorical features using **One-Hot Encoding**  
+✔ Removed outliers using the **IQR (Interquartile Range) Method**  
+✔ Split dataset into Training and Testing sets  
+✔ Trained model using **Linear Regression**  
+
+---
+
+## 📈 Model Used
+
+### ✅ Linear Regression
+Linear Regression was used to predict the target variable `exam_score` based on all student habit features.
+
+---
+
+## 📊 Model Performance
+
+After preprocessing and improving the dataset, the model achieved the following results:
+
+- **Mean Squared Error (MSE):** 24.8956  
+- **Mean Absolute Error (MAE):** 4.0354  
+- **Root Mean Squared Error (RMSE):** 4.9895  
+- **R² Score:** 0.9029  
+
+📌 The model explains approximately **90% of the variance** in exam scores, making it a strong regression model for this dataset.
+
+---
+
+## 📂 Project Structure
+
+# Loan Approval Prediction using Machine Learning
+
+## 📌 Project Overview
+This project is a **Loan Approval Prediction System** built using **Machine Learning Classification** techniques.  
+The goal of this project is to predict whether a loan application will be **Approved (1)** or **Rejected (0)** based on applicant details such as income, loan amount, marital status, property area, and employment status.
+
+This project helps in understanding how machine learning models can be used in real-world financial decision-making systems.
+
+---
+
+## 🚀 Features
+- Data preprocessing and cleaning
+- Conversion of categorical/object columns into numeric format
+- Outlier detection and removal for better performance
+- Handling imbalanced dataset analysis
+- Model training using **RandomForestClassifier**
+- Hyperparameter tuning for best parameter selection
+- Model evaluation using accuracy score
+
+---
+
+## 🧠 Machine Learning Model Used
+- **Random Forest Classifier**
+
+Random Forest is an ensemble learning algorithm that improves prediction accuracy by combining multiple decision trees.
+
+---
+
+## 📊 Dataset Information
+Target column: **Loan_Status1**
+
+Class Distribution:
+- Approved (1): **68.7%**
+- Rejected (0): **31.3%**
+
+This shows that the dataset is **imbalanced**, which may affect the model’s performance.
+
+---
+
+## ⚙️ Technologies Used
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib (optional for visualization)
+
+---
+
+## 🛠 Steps Performed
+1. Loaded the dataset
+2. Checked missing values
+3. Converted categorical/object columns into numeric values
+4. Removed outliers to improve model performance
+5. Checked class imbalance in the dataset
+6. Split the dataset into training and testing sets
+7. Applied hyperparameter tuning to find best parameters
+8. Trained the model using RandomForestClassifier
+9. Evaluated model accuracy and performance
+
+---
+
+## 📈 Model Performance
+- Accuracy Achieved: **~0.73**
+
+Note: Since the dataset is imbalanced, accuracy alone is not enough. Metrics like **Precision, Recall, and F1-score** should also be considered.
+
+---
+
+## 🧪 How to Run the Project
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/your-username/loan-approval-prediction.git
