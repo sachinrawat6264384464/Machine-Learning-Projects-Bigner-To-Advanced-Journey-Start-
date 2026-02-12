@@ -165,3 +165,102 @@ Note: Since the dataset is imbalanced, accuracy alone is not enough. Metrics lik
 ### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/your-username/loan-approval-prediction.git
+
+
+
+# 🛍️ Customer Segmentation using K-Means Clustering
+
+## 📌 Project Overview
+This project focuses on **Customer Segmentation** using the **K-Means Clustering Algorithm**.  
+The goal is to group customers into different segments based on their **Annual Income** and **Spending Score**, so businesses can understand customer behavior and target them with better marketing strategies.
+
+This is a real-world Data Science project commonly used in retail and e-commerce industries.
+
+---
+
+## 🎯 Objective
+- To analyze customer purchasing behavior.
+- To segment customers into different clusters.
+- To identify **high-value customers** and **low-spending customers**.
+- To visualize and interpret customer groups using clustering.
+
+---
+
+## 📂 Dataset
+**Dataset Name:** Mall Customer Segmentation Dataset  
+**Source:** Kaggle  
+
+### Features Used:
+- **Annual Income (k$)**
+- **Spending Score (1-100)**
+- (Optional) Age (for advanced clustering)
+
+---
+
+## 🧠 Algorithm Used
+### ✅ K-Means Clustering
+K-Means is an unsupervised machine learning algorithm that groups data points into **K clusters** based on similarity using distance calculations.
+
+---
+
+## ⚙️ Project Workflow
+1. Importing Libraries  
+2. Loading Dataset  
+3. Data Cleaning & Exploration (EDA)  
+4. Feature Selection  
+5. Feature Scaling using **StandardScaler**
+6. Finding Optimal K using:
+   - **Elbow Method (WCSS / Inertia)**
+   - **Silhouette Score**
+7. Training the K-Means Model
+8. Predicting Clusters
+9. Visualizing Clusters with Centroids
+10. Cluster Interpretation and Summary
+
+---
+
+## 📊 Model Evaluation
+### 📌 Elbow Method
+Used to find the optimal number of clusters by analyzing **WCSS (Within Cluster Sum of Squares)**.
+
+### 📌 Silhouette Score
+Used to evaluate clustering performance and check how well clusters are separated.
+
+---
+
+## 📈 Output & Results
+After training the model, customers are divided into different clusters such as:
+
+- **High Income - High Spenders (Premium Customers)**
+- **Low Income - High Spenders**
+- **High Income - Low Spenders**
+- **Low Income - Low Spenders**
+- **Average Customers**
+
+Each cluster represents a unique customer group useful for business decision-making.
+
+---
+
+## 📌 Visualization
+The clusters are visualized using a scatter plot where:
+- X-axis = Annual Income
+- Y-axis = Spending Score
+- Different colors represent different clusters
+- Centroids are displayed using a black `X` marker
+
+---
+
+## 🛠️ Technologies & Libraries Used
+- Python
+- NumPy
+- Pandas
+- Matplotlib
+- Seaborn
+- Scikit-learn
+
+---
+
+## 🚀 How to Run This Project
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/your-username/customer-segmentation-kmeans.git
