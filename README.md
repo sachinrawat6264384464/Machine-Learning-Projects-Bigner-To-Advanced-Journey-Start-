@@ -379,3 +379,199 @@ Try DBSCAN for density-based clustering
 
 Sachin Rawat
 (Data Science / Machine Learning Enthusiast)
+
+
+project ###########################
+
+
+
+📌 Online Retail Customer Segmentation using RFM + K-Means + Hierarchical Clustering
+📖 Project Overview
+
+This project focuses on customer segmentation for an E-Commerce business using the Online Retail Dataset.
+The goal is to group customers based on their purchasing behavior using the RFM Model and apply clustering techniques to identify meaningful customer segments.
+
+Customer segmentation helps businesses in:
+
+Targeted marketing campaigns
+
+Customer retention strategies
+
+Personalized offers
+
+Identifying VIP and churn-risk customers
+
+🎯 Objective
+
+To segment customers based on:
+
+Recency (how recently a customer purchased)
+
+Frequency (how often a customer purchased)
+
+Monetary (how much money a customer spent)
+
+Then apply:
+
+K-Means Clustering
+
+Hierarchical Clustering (Dendrogram)
+
+📂 Dataset
+
+Dataset used: Online Retail Dataset (Kaggle)
+🔗 Link: https://www.kaggle.com/datasets/vijayuv/onlineretail
+
+Dataset contains transactional data including:
+
+InvoiceNo
+
+StockCode
+
+Description
+
+Quantity
+
+InvoiceDate
+
+UnitPrice
+
+CustomerID
+
+Country
+
+🛠️ Technologies Used
+
+Python
+
+Pandas, NumPy
+
+Matplotlib, Seaborn
+
+Scikit-learn
+
+SciPy (for Hierarchical Clustering)
+
+🔥 Steps Performed
+✅ 1. Data Cleaning
+
+Removed missing CustomerID
+
+Removed cancelled invoices (InvoiceNo starting with "C")
+
+Removed negative/zero quantity values
+
+Created new feature TotalAmount
+
+✅ 2. Feature Engineering (RFM Model)
+
+RFM values were calculated using:
+
+Recency = Days since last purchase
+
+Frequency = Total number of unique orders
+
+Monetary = Total money spent by the customer
+
+✅ 3. Data Scaling
+
+Since RFM values have different ranges, scaling was applied using:
+
+StandardScaler
+
+✅ 4. Clustering Techniques
+🔹 K-Means Clustering
+
+Used Elbow Method to find optimal K
+
+Performed K-Means clustering
+
+Assigned cluster labels to customers
+
+🔹 Hierarchical Clustering
+
+Used linkage method
+
+Created dendrogram visualization
+
+✅ 5. Visualization
+
+Scatter plots for cluster visualization
+
+Cluster centroids plotting
+
+Dendrogram for hierarchical clustering
+
+📊 Output
+
+Final output includes:
+
+RFM Table for each customer
+
+Cluster label assigned to each customer
+
+Cluster-wise summary statistics
+
+Example output:
+
+CustomerID	Recency	Frequency	Monetary	Cluster
+17850	5	50	20000	0
+13047	120	2	500	2
+🏆 Cluster Interpretation
+
+After clustering, customers can be categorized into:
+
+VIP Customers (High Frequency + High Monetary)
+
+Loyal Customers (High Frequency, medium spending)
+
+New Customers (Low Frequency, recent purchase)
+
+At Risk Customers (High Recency, low frequency)
+
+📌 Results
+
+This project successfully identified customer groups which can be used for:
+
+Retention analysis
+
+Marketing targeting
+
+Discount campaigns for at-risk customers
+
+Rewards for VIP customers
+
+🚀 How to Run
+
+Clone this repository:
+
+git clone https://github.com/your-username/online-retail-customer-segmentation.git
+
+
+Install required libraries:
+
+pip install pandas numpy matplotlib seaborn scikit-learn scipy
+
+
+Run the notebook/script:
+
+python customer_segmentation.py
+
+📌 Future Improvements
+
+Add Customer Lifetime Value (CLV)
+
+Try DBSCAN clustering
+
+Build an interactive dashboard using Streamlit
+
+Automate cluster naming based on RFM thresholds
+
+📎 Author
+
+Sachin Rawat
+📌 Data Science | Machine Learning | Clustering | RFM Analysis
+
+⭐ If you like this project
+
+Give a ⭐ to support the work!
